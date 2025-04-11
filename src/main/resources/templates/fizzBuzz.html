@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    <ul>
+        <li th:each="num : ${fizzBuzzList}" th:text="${num}"></li>
+    </ul>
+</body>
+</html>
