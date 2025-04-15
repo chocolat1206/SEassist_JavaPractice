@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>計算機</title>
+</head>
+<body>
+	<form action="/MinusService" method="post">
+		<h1>引き算</h1>
+		<input type="number" name="num1" required>
+		-
+		<input type="number" name="num2" required>
+		<input type="submit" value="=" name="equal">
+	</form>
+	
+	<!-- 計算結果を表示 !-->
+	<div>
+		<p th:text="${result}"></p>
+		<p th:text="${error}"></p>
+	</div>
+</body>
+</html>
